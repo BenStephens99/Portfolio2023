@@ -184,7 +184,7 @@ const website2022 = {
             <p>2022 version of my personal website.</p>
         </>,
     buttons:
-        <PortfolioButton text="Visit Website" link="https://ben.stephens.uk.net/archive/2022/index.html" />
+        <PortfolioButton text="Visit Website" link="https://benstephens99.github.io/" />
     ,
     image: website2022Thumb
 }
