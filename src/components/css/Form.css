@@ -1,0 +1,105 @@
+form {
+    width: 90%;
+    max-width: 30em;
+}
+
+form h2 {
+    margin-bottom: 1em;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 0.75em 0;
+    background: transparent;
+    border: none;
+    color: rgb(223, 223, 223);
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    margin: 0.5em 0;
+}
+
+label {
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    text-transform: uppercase;
+    pointer-events: none;
+    letter-spacing: 0.1em;
+    transition: 200ms;
+    font-size: 1.2em;
+}
+
+textarea {
+    height: 150px;
+}
+
+.inputBox input:valid~label,
+.inputBox input:focus~label,
+.inputBox textarea:valid~label,
+.inputBox textarea:focus~label {
+    color: var(--accentColor);
+    transform: translateY(-1.5em);
+    font-size: 1em;
+}
+
+.inputBox input:not(:placeholder-shown):invalid~label {
+    color: rgb(229, 82, 82);
+    transform: translateY(-1.5em);
+    font-size: 0.9em;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px var(--backgroundColor3) inset;
+    -webkit-text-fill-color: rgb(223, 223, 223) !important;
+}
+
+form button {
+    padding: 1em;
+    font-family: inherit;
+    font-size: 1.2em;
+    background: transparent;
+    color: inherit;
+    border: 1px solid white;
+    text-transform: uppercase;
+    transition: 400ms;
+}
+
+form button:hover {
+    cursor: pointer;
+    color: var(--accentColor);
+    border-radius: 24px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 0;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    opacity: 0;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    opacity: 0;
+}

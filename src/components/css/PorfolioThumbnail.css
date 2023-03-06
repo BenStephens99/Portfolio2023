@@ -1,0 +1,64 @@
+.portfolio-thumb {
+    height:100%;
+    width: 100%;
+    position: relative;
+    transition: 400ms;
+    display: flex;
+    align-items: center;
+    animation-name: fade-in-thumbnail;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in;
+    animation-delay: 500ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-thumbnail {
+    to {
+        opacity: 1;
+    }
+}
+
+.portfolio-thumb img {
+    max-width: 100%;
+    overflow: hidden;
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    transition: inherit;
+}
+
+.thumb-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.701);
+    padding: 1em;
+    border-radius: 16px;
+    width: 70%;
+    transition: inherit;
+}
+
+.thumb-text h1 {
+    font-size: 1.2em;
+    text-transform: none;
+    letter-spacing: 2px;
+}
+
+.thumb-text h2 {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    letter-spacing: 1px;
+}
+
+.portfolio-thumb:hover {
+    cursor: pointer;
+}
+.portfolio-thumb:hover img {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.portfolio-thumb:hover .thumb-text {
+    opacity: 0;
+}

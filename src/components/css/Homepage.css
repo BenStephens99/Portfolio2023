@@ -1,0 +1,41 @@
+.homepage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.homepage-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 32px;
+}
+
+.home-navigation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    .homepage .home-nav-button.right {
+        top: 25%;
+        position: absolute;
+    }
+
+    .homepage .home-nav-button.left {
+      top: 70%;
+      position: absolute;
+    }
+    .homepage-text {
+        font-size: 1em;
+        width: 100%;
+    }
+}
+
+

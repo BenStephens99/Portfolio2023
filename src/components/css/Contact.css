@@ -1,0 +1,36 @@
+.contact {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .box {
+    display: grid;
+    width: 100%;
+    max-width: 65em;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.contact .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+@media screen and (max-width: 800px) {
+    .contact .box {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    .contact .home-nav-button.left {
+        position: absolute;
+        top: 3em;
+    }
+
+    .contact form {
+        margin: auto;
+    }
+}

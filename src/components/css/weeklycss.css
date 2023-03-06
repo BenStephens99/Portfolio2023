@@ -1,0 +1,25 @@
+/**** Week 1 ****/
+.underline-on-hover {
+    display: inline-flex;
+    padding-bottom: 0.5em;
+    position: relative;
+  }
+  
+  .underline-on-hover:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0.2em;
+    transition: 0.7s;
+    background-color: var(--accentColor);
+  }
+  
+  .underline-on-hover:hover:after {
+    width: 100%
+  }
+  
+  .underline-on-hover:hover {
+    cursor: pointer;
+  }

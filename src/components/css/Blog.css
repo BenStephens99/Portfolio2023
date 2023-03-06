@@ -1,0 +1,50 @@
+.blog {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 6em auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2em;
+}
+
+.blog .box {
+    padding: 0;
+
+}
+
+.blog>h2 {
+    margin: 2em 0;
+}
+
+.blog-posts {
+    width: 80%;
+    max-width: 70em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    border-radius: 16px;
+    gap: 2em;
+    height: min-content;
+
+}
+
+.blog article {
+    min-height: 10em;
+}
+
+@media screen and (max-width: 950px) {
+    .blog-posts {
+        width: 95%;
+        padding: 0;
+    }
+
+   .blog .home-nav-button.right {
+        top: 90%;
+        background-color: var(--backgroundColor);
+        padding: 1em;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+   }
+}

@@ -1,0 +1,100 @@
+.about {
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.about .boxes {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1fr;
+    width: 95%;
+    max-width: 120em;
+    height: 100%;
+    min-height: 40em;
+    column-gap: 5%;
+    row-gap: 2%;
+}
+
+.about .box {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    justify-content: center;
+}
+
+.qual {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.picture {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.picture img {
+    max-width: 100%;
+    border-radius: 50%;
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
+}
+
+.map.box {
+    grid-column: 1 / span 3;
+
+}
+
+.map iframe {
+    filter: brightness(70%) grayscale(20%);
+}
+
+.about .home-nav-button {
+    background-color: var(--backgroundColor);
+    padding: 1.5em;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transition: 400ms;
+    box-sizing: border-box;
+}
+
+.about .home-nav-button img:hover {
+    width: 60px;
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+        height: auto;
+        min-width: auto;
+    }
+
+    .about .boxes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: auto;
+        height: auto;
+        min-height: auto;
+        column-gap: 0;
+        row-gap: 0;
+    }
+
+    .map.box {
+        height: 30em;
+    }
+
+    .picture img {
+        max-width: 15em;
+    }
+}
