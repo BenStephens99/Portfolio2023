@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { MainRefContext } from "../App";
 import HomeNavButton from "./HomeNavButton";
-import './css/Portfolio.css';
 import { useState } from "react";
 import PortfolioButton from "./PortfolioButton";
 import energyThumb from './images/energyThumb.png'
@@ -14,6 +13,7 @@ import pongThumb from './images/pong.jpg';
 import piAppThumb from './images/piapp.png';
 import website2022Thumb from './images/2022Website.png'
 import cyberThumb from './images/cyberThumb.png'
+import './css/Portfolio.css';
 
 const starterThumb = {
     title: "Portfolio Section",
@@ -76,7 +76,7 @@ const jtreat = {
 }
 
 const piApp = {
-    title: "Home Devive Controller",
+    title: "Home Device Controller",
     type: "Personal Project",
     technologies:
         <>
@@ -224,6 +224,59 @@ function Portfolio() {
             <div className="portfolio-showcase">
                 <h2 className="portfolio-title">{currentWork.title}</h2>
 
+
+                <div className="portfolio-thumbs-container">
+                    <div className="portfolio-thumbs">
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={energyApp}
+                        />
+
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={jtreat}
+                        />
+
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={npcSystem}
+                        />
+
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={website2022}
+                        />
+
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={cyberAssure}
+                        />
+
+
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={piApp}
+                        />
+
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={pong}
+                        />
+
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={agentEscape}
+                        />
+
+                        <PortfolioThumbnail
+                            setPortfolio={setCurrentWork}
+                            work={houseEscape}
+                        />
+
+                    </div>
+                </div>
+
+
                 <div className="portfolio-description">
                     <ul>
                         {currentWork.technologies}
@@ -236,54 +289,7 @@ function Portfolio() {
                     </div>
                 </div>
 
-                <div className="portfolio-thumbs">
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={energyApp}
-                    />
 
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={jtreat}
-                    />
-
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={npcSystem}
-                    />
-
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={website2022}
-                    />
-
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={cyberAssure}
-                    />
-
-
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={piApp}
-                    />
-
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={pong}
-                    />
-
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={agentEscape}
-                    />
-
-                    <PortfolioThumbnail
-                        setPortfolio={setCurrentWork}
-                        work={houseEscape}
-                    />
-
-                </div>
             </div>
         </main>
     )
