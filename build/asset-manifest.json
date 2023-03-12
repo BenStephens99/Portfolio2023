@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.427469e0.css",
-    "main.js": "/static/js/main.8a85731a.js",
+    "main.css": "/static/css/main.0ffbf922.css",
+    "main.js": "/static/js/main.95a776d1.js",
     "static/media/NPCSystem.png": "/static/media/NPCSystem.21672ff34171cad8d353.png",
     "static/media/cyberThumb.png": "/static/media/cyberThumb.686de2728f6084f9cadd.png",
     "static/media/houseEscape.jpg": "/static/media/houseEscape.6651b98afeb3ad3efe11.jpg",
@@ -13,11 +13,11 @@
     "static/media/piapp.png": "/static/media/piapp.0570507ac716e5776453.png",
     "static/media/me.jpeg": "/static/media/me.429baa06bb5842923237.jpeg",
     "index.html": "/index.html",
-    "main.427469e0.css.map": "/static/css/main.427469e0.css.map",
-    "main.8a85731a.js.map": "/static/js/main.8a85731a.js.map"
+    "main.0ffbf922.css.map": "/static/css/main.0ffbf922.css.map",
+    "main.95a776d1.js.map": "/static/js/main.95a776d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.427469e0.css",
-    "static/js/main.8a85731a.js"
+    "static/css/main.0ffbf922.css",
+    "static/js/main.95a776d1.js"
   ]
 }

@@ -15,19 +15,32 @@ function Blog() {
             <HomeNavButton position="right" destination="/" text="Home" />
             <h2>Weekly CSS Tricks</h2>
             <div className="blog-posts">
+
+                <BlogPost
+                    week="2"
+                    heading="Animated form label"
+                    text="Press on the input box below to see the animation."
+                    date="08/03/23"
+                    demo={
+
+                        <div class="animated-form-label">
+                            <input type="text" name="name" id="name" required />
+                            <label for="name">Name</label>
+                        </div>
+                    }
+                    css="BenStephens99/6c3af459a8013840a89cf4af95e0c763"
+                    html="BenStephens99/306cf47c8321042e41e1274ee6011321"
+                />
+
                 <BlogPost
                     week="1"
                     heading="Gradual Underline on Hover"
                     text="Hover over the text below to see the effect."
-                    date="01/03/23" 
+                    date="01/03/23"
                     demo={<h2 className="underline-on-hover">Hover over Me</h2>}
                     css="BenStephens99/7aad512b1c7c328aa5b6cbbdf7f946a2"
                     html="BenStephens99/be0cfabfef46fd50bdaf6239fa622d98"
-                    />
-            
-            
-                    
-
+                />
 
             </div>
         </main>

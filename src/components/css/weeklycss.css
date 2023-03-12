@@ -1,3 +1,40 @@
+/*** Week 2 ***/
+.animated-form-label {
+  position: relative;
+  margin: 1em;
+}
+
+.animated-form-label input,
+.animated-form-label textarea {
+  font-family: inherit;
+  font-size: 1.5em;
+  padding: 10px 0;
+  border: none;
+  color: inherit;
+  outline: none;
+  border-bottom: 1px solid grey;
+}
+
+.animated-form-label label {
+  position: absolute;
+  top: 1.6em;
+  left: 0;
+  text-transform: uppercase;
+  transition: 250ms;
+  font-size: 1.4em;
+}
+
+.animated-form-label input:valid ~ label,
+.animated-form-label input:focus ~ label,
+.animated-form-label textarea:valid ~ label,
+.animated-form-label textarea:focus ~ label
+{
+  color: var(--accentColor);
+  transform: translateY(-1.6em);
+  font-size: 0.9em;
+}
+
+
 /**** Week 1 ****/
 .underline-on-hover {
     display: inline-flex;
