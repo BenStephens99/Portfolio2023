@@ -16,7 +16,7 @@ import cyberThumb from './images/cyberThumb.png'
 import './css/Portfolio.css';
 
 const starterThumb = {
-    title: "Portfolio Section",
+    title: "My Work",
     description: <>
         <p>Click on a thumbnail to learn more about the project.</p>
     </>
