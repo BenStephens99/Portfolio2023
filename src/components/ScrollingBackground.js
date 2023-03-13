@@ -34,7 +34,9 @@ function ScrollingBackground() {
             <Marquee 
             gradient={false}
             className="marquee">
-                <Items />
+                <ul>
+                    <Items />
+                </ul>
             </Marquee>
         </div>
     )
