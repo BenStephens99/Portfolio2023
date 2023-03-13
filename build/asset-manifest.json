@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.00c0528b.css",
+    "main.css": "/static/css/main.7350d8fe.css",
     "main.js": "/static/js/main.50869a4f.js",
     "static/media/NPCSystem.png": "/static/media/NPCSystem.21672ff34171cad8d353.png",
     "static/media/cyberThumb.png": "/static/media/cyberThumb.686de2728f6084f9cadd.png",
@@ -13,11 +13,11 @@
     "static/media/piapp.png": "/static/media/piapp.0570507ac716e5776453.png",
     "static/media/me.jpeg": "/static/media/me.429baa06bb5842923237.jpeg",
     "index.html": "/index.html",
-    "main.00c0528b.css.map": "/static/css/main.00c0528b.css.map",
+    "main.7350d8fe.css.map": "/static/css/main.7350d8fe.css.map",
     "main.50869a4f.js.map": "/static/js/main.50869a4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.00c0528b.css",
+    "static/css/main.7350d8fe.css",
     "static/js/main.50869a4f.js"
   ]
 }
