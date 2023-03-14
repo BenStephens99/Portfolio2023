@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.575cc5b6.css",
-    "main.js": "/static/js/main.5cf7136e.js",
+    "main.js": "/static/js/main.814a63fd.js",
     "static/media/pong.webp": "/static/media/pong.2c62308da845a4453ad8.webp",
     "static/media/houseEscape.webp": "/static/media/houseEscape.82e5c41f74820740c51b.webp",
     "static/media/NPCSystem.webp": "/static/media/NPCSystem.7cd42e2a293b3aa80a46.webp",
@@ -15,10 +15,10 @@
     "static/media/arrow.webp": "/static/media/arrow.fce4774505b1277d1c9e.webp",
     "index.html": "/index.html",
     "main.575cc5b6.css.map": "/static/css/main.575cc5b6.css.map",
-    "main.5cf7136e.js.map": "/static/js/main.5cf7136e.js.map"
+    "main.814a63fd.js.map": "/static/js/main.814a63fd.js.map"
   },
   "entrypoints": [
     "static/css/main.575cc5b6.css",
-    "static/js/main.5cf7136e.js"
+    "static/js/main.814a63fd.js"
   ]
 }
