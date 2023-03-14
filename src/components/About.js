@@ -3,7 +3,7 @@ import './css/About.css'
 import HomeNavButton from "./HomeNavButton";
 import { MainRefContext } from "../App";
 import me from './images/me.webp'
-
+import HackerEffect from "./HackerEffect";
 function About() {
 
     const mainRef = React.useContext(MainRefContext);
@@ -13,12 +13,12 @@ function About() {
             <HomeNavButton text="Home" position="bottom" destination="/" />
             <div className="boxes">
                 <div className="picture box">
-                    <h2>Ben Stephens</h2>
+                    <h2><HackerEffect text="Ben Stephens" /></h2>
                     <img src={me} alt="Ben Stephens" />
                 </div>
 
                 <div className="bio box">
-                    <h1>About me</h1>
+                    <h1><HackerEffect text="About me"/></h1>
                     <p>My name is Ben and I am a recent graduate from the University of Brighton.
                         I am excited to begin my journey as a developer and am eager to apply my
                         skills and knowledge to create engaging and user-friendly websites and
@@ -29,7 +29,7 @@ function About() {
                 </div>
 
                 <div className="qualifications box">
-                    <h3>Qualifications</h3>
+                    <h3><HackerEffect text="Qualifications"/></h3>
                     <div className="qual">
                         <p className="accent"> Computer Science for Games BSc Hons</p>
                         <p >First Class Honours</p>

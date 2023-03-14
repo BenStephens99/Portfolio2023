@@ -4,6 +4,7 @@ import HomeNavButton from "./HomeNavButton";
 import './css/Blog.css'
 import BlogPost from "./BlogPost";
 import './css/weeklycss.css';
+import HackerEffect from "./HackerEffect";
 
 function Blog() {
     const mainRef = React.useContext(MainRefContext);
@@ -13,7 +14,7 @@ function Blog() {
     return (
         <main ref={mainRef} className="blog come-from-left">
             <HomeNavButton position="right" destination="/" text="Home" />
-            <h2>Weekly CSS Tricks</h2>
+            <h2><HackerEffect text="Weekly CSS Tricks"/> </h2>
             <div className="blog-posts">
 
                 <BlogPost

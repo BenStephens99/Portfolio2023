@@ -15,13 +15,13 @@ import website2022Thumb from './images/2022Website.webp'
 import cyberThumb from './images/cyberThumb.webp'
 import arrow from './images/arrow.webp'
 import './css/Portfolio.css';
-
+import HackerEffect from "./HackerEffect";
 const energyApp = {
     title:
         <>
-            <span>Energy</span>
-            <span>Consumption</span>
-            <span>Monitor</span>
+            <HackerEffect text="Energy" />
+            <HackerEffect text="Consumption" />
+            <HackerEffect text="Monitor" />
         </>,
     type: "Desktop Application",
     technologies:
@@ -57,9 +57,9 @@ const energyApp = {
 
 const jtreat = {
     title: <>
-        <span>jtreat</span>
-        <span>Performance and Recovery</span>
-        <span>Wesbsite</span>
+        <HackerEffect text="jtreat" />
+        <HackerEffect text="Performance and Recovery" />
+        <HackerEffect text="Wesbsite" />
     </>,
     type: "Website",
     technologies:
@@ -79,9 +79,9 @@ const jtreat = {
 
 const piApp = {
     title: <>
-        <span>home</span>
-        <span>device</span>
-        <span>controller</span>
+        <HackerEffect text="home" />
+        <HackerEffect text="device" />
+        <HackerEffect text="controller" />
     </>,
     type: "Personal Project",
     technologies:
@@ -102,8 +102,8 @@ const piApp = {
 
 const cyberAssure = {
     title: <>
-        <span>Cyber-Assure Technology</span>
-        <span>Wesbsite</span>
+        <HackerEffect text="Cyber-Assure Technology" />
+        <HackerEffect text="Wesbsite" />
     </>,
     type: "Website",
     technologies:
@@ -123,8 +123,8 @@ const cyberAssure = {
 
 const agentEscape = {
     title: <>
-        <span>Agent Escape</span>
-        <span>2D Unity Engine Game</span>
+        <HackerEffect text="Agent Escape" />
+        <HackerEffect text="2D Unity Engine Game" />
     </>,
     type: "Game",
     technologies:
@@ -144,8 +144,8 @@ const agentEscape = {
 
 const houseEscape = {
     title: <>
-        <span>House Escape</span>
-        <span>3D Unreal Engine Game</span>
+        <HackerEffect text="House Escape" />
+        <HackerEffect text="3D Unreal Engine Game" />
     </>,
     type: "Game",
     technologies:
@@ -164,8 +164,8 @@ const houseEscape = {
 
 const npcSystem = {
     title: <>
-        <span>immersive NPCs</span>
-        <span>for games</span>
+        <HackerEffect text="immersive NPCs" />
+        <HackerEffect text="for games" />
     </>,
     type: "Games",
     technologies:
@@ -192,8 +192,8 @@ const npcSystem = {
 
 const website2022 = {
     title: <>
-        <span>My Website</span>
-        <span>2022 edition</span>
+        <HackerEffect text="My Website" />
+        <HackerEffect text="2022 edition" />
     </>,
     type: "Website",
     technologies:
@@ -213,8 +213,8 @@ const website2022 = {
 
 const pong = {
     title: <>
-        <span>Pong</span>
-        <span>2 player network game</span>
+        <HackerEffect text="Pong" />
+        <HackerEffect text="2 player network game" />
     </>,
     type: "Multiplayer Game",
     technologies:
@@ -300,8 +300,8 @@ function Portfolio() {
                 </div>
                 <div className="portfolio-title">{currentWork.title}</div>
                 <div className="portfolio-nav">
-                    <span onClick={prevWork} className="prev-item"><img alt="back" src={arrow} /></span>
-                    <span onClick={nextWork} className="next-item"><img alt="next" src={arrow} /></span>
+                    <span onClick={prevWork} className="prev-item"><img alt="back" src={arrow} /> </span> 
+                    <span onClick={nextWork} className="next-item"><img alt="next" src={arrow} /> </span> 
                 </div>
 
             </div>
