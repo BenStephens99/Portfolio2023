@@ -44,7 +44,7 @@ function About() {
                 </div>
 
                 <div className="map box">
-                <iframe width="100%" height="100%" src="https://www.openstreetmap.org/export/embed.html?bbox=-4.510024484023259%2C48.95858066440977%2C4.251572195664242%2C52.63973017532399&amp;layer=mapnik&amp;marker=50.835432306955276%2C-0.12922614417948353"></iframe>
+                <iframe title="map" width="100%" height="100%" src="https://www.openstreetmap.org/export/embed.html?bbox=-4.510024484023259%2C48.95858066440977%2C4.251572195664242%2C52.63973017532399&amp;layer=mapnik&amp;marker=50.835432306955276%2C-0.12922614417948353"></iframe>
                 </div>
 
             </div>
