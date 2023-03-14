@@ -3,28 +3,26 @@ import { MainRefContext } from "../App";
 import HomeNavButton from "./HomeNavButton";
 import { useState } from "react";
 import PortfolioButton from "./PortfolioButton";
-import energyThumb from './images/energyThumb.png'
-import jtreatThumb from './images/jtreatThumb.png'
+import energyThumb from './images/energyThumb.webp'
+import jtreatThumb from './images/jtreatThumb.webp'
 import PortfolioThumbnail from "./PorfolioThumbnail";
-import agentEscapeThumb from './images/agentEscape.jpg';
-import npcSystemThumb from './images/NPCSystem.png';
-import houseEscapeThumb from './images/houseEscape.jpg';
-import pongThumb from './images/pong.jpg';
-import piAppThumb from './images/piapp.png';
-import website2022Thumb from './images/2022Website.png'
-import cyberThumb from './images/cyberThumb.png'
+import agentEscapeThumb from './images/agentEscape.webp';
+import npcSystemThumb from './images/NPCSystem.webp';
+import houseEscapeThumb from './images/houseEscape.webp';
+import pongThumb from './images/pong.webp';
+import piAppThumb from './images/piapp.webp';
+import website2022Thumb from './images/2022Website.webp'
+import cyberThumb from './images/cyberThumb.webp'
+import arrow from './images/arrow.webp'
 import './css/Portfolio.css';
 
-const starterThumb = {
-    title: "My Work",
-    description: <>
-        <p>Click on a thumbnail to learn more about the project.</p>
-    </>
-}
-
-
 const energyApp = {
-    title: "Energy App",
+    title:
+        <>
+            <span>Energy</span>
+            <span>Consumption</span>
+            <span>Monitor</span>
+        </>,
     type: "Desktop Application",
     technologies:
         <>
@@ -58,7 +56,11 @@ const energyApp = {
 }
 
 const jtreat = {
-    title: "JTreat",
+    title: <>
+        <span>jtreat</span>
+        <span>Performance and Recovery</span>
+        <span>Wesbsite</span>
+    </>,
     type: "Website",
     technologies:
         <>
@@ -76,7 +78,11 @@ const jtreat = {
 }
 
 const piApp = {
-    title: "Home Device Controller",
+    title: <>
+        <span>home</span>
+        <span>device</span>
+        <span>controller</span>
+    </>,
     type: "Personal Project",
     technologies:
         <>
@@ -95,7 +101,10 @@ const piApp = {
 }
 
 const cyberAssure = {
-    title: "Cyber-Assure",
+    title: <>
+        <span>Cyber-Assure Technology</span>
+        <span>Wesbsite</span>
+    </>,
     type: "Website",
     technologies:
         <>
@@ -113,7 +122,10 @@ const cyberAssure = {
 }
 
 const agentEscape = {
-    title: "Agent Escape",
+    title: <>
+        <span>Agent Escape</span>
+        <span>2D Unity Engine Game</span>
+    </>,
     type: "Game",
     technologies:
         <>
@@ -131,7 +143,10 @@ const agentEscape = {
 }
 
 const houseEscape = {
-    title: "House Escape",
+    title: <>
+        <span>House Escape</span>
+        <span>3D Unreal Engine Game</span>
+    </>,
     type: "Game",
     technologies:
         <>
@@ -148,7 +163,10 @@ const houseEscape = {
 }
 
 const npcSystem = {
-    title: "NPC System",
+    title: <>
+        <span>immersive NPCs</span>
+        <span>for games</span>
+    </>,
     type: "Games",
     technologies:
         <>
@@ -173,7 +191,10 @@ const npcSystem = {
 }
 
 const website2022 = {
-    title: "2022 Personal Site",
+    title: <>
+        <span>My Website</span>
+        <span>2022 edition</span>
+    </>,
     type: "Website",
     technologies:
         <>
@@ -191,7 +212,10 @@ const website2022 = {
 
 
 const pong = {
-    title: "Pong",
+    title: <>
+        <span>Pong</span>
+        <span>2 player network game</span>
+    </>,
     type: "Multiplayer Game",
     technologies:
         <>
@@ -212,83 +236,73 @@ const pong = {
     image: pongThumb
 }
 
+
 function Portfolio() {
+
+    const works = [energyApp, jtreat, npcSystem, piApp, website2022, pong, cyberAssure, agentEscape, houseEscape]
+
+
     const mainRef = React.useContext(MainRefContext);
 
-    const [currentWork, setCurrentWork] = useState(starterThumb)
+    const [workIndex, setWorkIndex] = useState(0)
+    const [currentWork, setCurrentWork] = useState(works[workIndex])
+
+    function nextWork() {
+        if (workIndex + 1 > works.length - 1) {
+            setWorkIndex(0)
+        } else {
+            setWorkIndex(workIndex + 1)
+        }
+    }
+
+    function prevWork() {
+        if (workIndex - 1 < 0 ) {
+            setWorkIndex(works.length - 1)
+        } else {
+            setWorkIndex(workIndex - 1)
+        }
+    }
+
+
+    useEffect(() => {
+        setCurrentWork(works[workIndex])
+    }, [workIndex]);
 
 
     return (
         <main ref={mainRef} className="portfolio come-from-bottom">
-            <HomeNavButton position="top" destination="/" text="Home" />
-            <div className="portfolio-showcase">
-                <h2 className="portfolio-title">{currentWork.title}</h2>
-
-
-                <div className="portfolio-thumbs-container">
-                    <div className="portfolio-thumbs">
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={energyApp}
-                        />
-
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={jtreat}
-                        />
-
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={npcSystem}
-                        />
-
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={website2022}
-                        />
-
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={cyberAssure}
-                        />
-
-
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={piApp}
-                        />
-
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={pong}
-                        />
-
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={agentEscape}
-                        />
-
-                        <PortfolioThumbnail
-                            setPortfolio={setCurrentWork}
-                            work={houseEscape}
-                        />
-
-                    </div>
+            <div className="portfolio-header">
+                <HomeNavButton text="Home" position="top" destination="/" />
+                <ul className="socials">
+                    <li><a href="https://github.com/BenStephens99" target="_blank" rel="noreferrer">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/stephens-ben/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                    <li><a href="./Ben Stephens CV.pdf" target="_blank" rel="noreferrer">CV</a></li>
+                </ul>
+                <div className="get-in-touch">
+                    <HomeNavButton text="Get In Touch" position="top" destination="/contact" />
                 </div>
 
-
+            </div>
+            <div className="portfolio-body">
+                <div className="portfolio-img">
+                    <img alt="" src={currentWork.image} />
+                </div>
                 <div className="portfolio-description">
-                    <ul>
+                    <div className="portfolio-technologies">
                         {currentWork.technologies}
-                    </ul>
-                    <div>
+                    </div>
+                    <div className="portfolio-text">
                         {currentWork.description}
                     </div>
                     <div className="portfolio-buttons">
                         {currentWork.buttons}
                     </div>
                 </div>
-
+                <div className="portfolio-title">{currentWork.title}</div>
+                <div className="portfolio-nav">
+                    <span onClick={prevWork} className="prev-item"><img alt="back" src={arrow} /></span>
+                    <span onClick={nextWork} className="next-item"><img alt="next" src={arrow} /></span>
+                </div>
 
             </div>
         </main>

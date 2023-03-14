@@ -10,17 +10,17 @@ function Form () {
 
             <div className="inputBox">
                 <input type="text" name="name" id="name" placeholder="." required />
-                <label for="name">Name</label>
+                <label htmlFor="name">Name</label>
             </div>
 
             <div className="inputBox">
                 <input type="email" name="email" id="email" placeholder="." required />
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
             </div>
 
             <div className="inputBox">
                 <textarea type="text" name="message" id="message" placeholder="." required></textarea>
-                <label for="name">Message</label>
+                <label htmlFor="name">Message</label>
             </div>
 
             <button id="submitButton" type="submit"> Submit </button>

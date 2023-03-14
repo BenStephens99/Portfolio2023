@@ -7,10 +7,14 @@
     overflow: hidden;
 }
 
+.homepage.invisible {
+    opacity: 0;
+}
+
 .homepage-text {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 50vw;
+    top: 50vh;
     transform: translate(-50%, -50%);
     text-align: center;
     line-height: 32px;
@@ -24,12 +28,12 @@
 
 @media screen and (max-width: 900px) {
     .homepage .home-nav-button.right {
-        top: 25%;
+        top: 25vh;
         position: absolute;
     }
 
     .homepage .home-nav-button.left {
-      top: 70%;
+      top: 70vh;
       position: absolute;
     }
     .homepage-text {

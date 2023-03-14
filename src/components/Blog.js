@@ -23,9 +23,9 @@ function Blog() {
                     date="08/03/23"
                     demo={
 
-                        <div class="animated-form-label">
+                        <div className="animated-form-label">
                             <input type="text" name="name" id="name" required />
-                            <label for="name">Name</label>
+                            <label>Name</label>
                         </div>
                     }
                     css="BenStephens99/6c3af459a8013840a89cf4af95e0c763"

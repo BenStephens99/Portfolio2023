@@ -1,6 +1,6 @@
 import React from "react";
 import './css/HomeNavButton.css';
-import arrow from './images/arrow.png';
+import arrow from './images/arrow.webp';
 import { useNavigate, useLocation } from "react-router-dom";
 import { MainRefContext } from "../App";
 import { DirectionContext } from "../App";
@@ -51,9 +51,9 @@ function HomeNavButton(props) {
     }
 
     return (
-        <div className={`home-nav-button ${props.position}`}>
+        <div onClick={goToPage} className={`home-nav-button ${props.position}`}>
             <h3>{props.text}</h3>
-            <img onClick={goToPage} src={arrow} alt="" />
+            <img  src={arrow} alt="" />
         </div>
     )
 }

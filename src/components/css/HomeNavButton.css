@@ -8,15 +8,14 @@
 }
 
 .home-nav-button.left {
-    top: 50%;
+    top: 50vh;
     left: 0;
-    transform: translateY(-50%);
     flex-direction: row-reverse;
     margin-left: 1%;
 }
 
 .home-nav-button.top {
-    left: 50%;
+    left: 50vw;
     transform: translateX(-50%) ;
     flex-direction: column-reverse;
     margin-top: 1%;
@@ -25,14 +24,13 @@
 
 .home-nav-button.right {
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 50vh;
     margin-right: 1%;
 }
 
 .home-nav-button.bottom {
     bottom: 0;
-    left: 50%;
+    left: 50vw;
     transform: translateX(-50%);
     flex-direction: column;
     margin-bottom: 1%;

@@ -9,7 +9,7 @@ import { DirectionContext } from "../App";
 
 function Homepage() {
 
-    const [divClass, setDivClass] = useState("")
+    const [divClass, setDivClass] = useState("invisible")
 
     const mainRef = React.useContext(MainRefContext);
     const directionContext = React.useContext(DirectionContext)

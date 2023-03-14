@@ -2,7 +2,7 @@ import React from "react";
 import './css/About.css'
 import HomeNavButton from "./HomeNavButton";
 import { MainRefContext } from "../App";
-import me from './images/me.jpeg'
+import me from './images/me.webp'
 
 function About() {
 

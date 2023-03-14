@@ -87,11 +87,16 @@
 
 @media screen and (max-width: 950px) {
 
+    .blog-post-body {
+       max-width: 99vw;
+    }
+
     .blog-code {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1em;
-
+        overflow: scroll;
+        max-width: 100%;
     }
 
     .open .blog-post-body {
