@@ -16,6 +16,10 @@ import cyberThumb from './images/cyberThumb.webp'
 import arrow from './images/arrow.webp'
 import './css/Portfolio.css';
 import HackerEffect from "./HackerEffect";
+import NavIcon from "./NavIcon";
+import homeSvg from './images/home.svg'
+import phoneSVG from './images/phone.svg'
+
 const energyApp = {
     title:
         <>
@@ -236,6 +240,11 @@ const pong = {
     image: pongThumb
 }
 
+function wait (time) {
+    return new Promise(resolve => {
+        setTimeout(resolve, time);
+    });   
+}
 
 function Portfolio() {
 
@@ -246,8 +255,13 @@ function Portfolio() {
 
     const [workIndex, setWorkIndex] = useState(0)
     const [currentWork, setCurrentWork] = useState(works[workIndex])
+    const [animationState, setAnimationState] = useState(null)
 
-    function nextWork() {
+    let animationDuration = 400;
+
+    async function nextWork() {
+        setAnimationState("leave-screen-left")
+        await wait (animationDuration)
         if (workIndex + 1 > works.length - 1) {
             setWorkIndex(0)
         } else {
@@ -255,7 +269,9 @@ function Portfolio() {
         }
     }
 
-    function prevWork() {
+    async function prevWork() {
+        setAnimationState("leave-screen-right")
+        await wait (animationDuration)
         if (workIndex - 1 < 0 ) {
             setWorkIndex(works.length - 1)
         } else {
@@ -266,12 +282,22 @@ function Portfolio() {
 
     useEffect(() => {
         setCurrentWork(works[workIndex])
+        async function startAnimation() {
+            if(animationState != null) {
+                await wait(20)
+                setAnimationState( animationState === "leave-screen-left" ? "enter-screen-right" : "enter-screen-left")
+            }
+        }
+        startAnimation();
     }, [workIndex]);
 
 
     return (
         <main ref={mainRef} className="portfolio come-from-bottom">
             <div className="portfolio-header">
+                <NavIcon text="HOME" icon={homeSvg} position="top" destination="/"/>
+                <NavIcon text="CONTACT" icon={phoneSVG} position="top" destination="/contact" pad="pad"/>
+
                 <HomeNavButton text="Home" position="top" destination="/" />
                 <ul className="socials">
                     <li><a href="https://github.com/BenStephens99" target="_blank" rel="noreferrer">Github</a></li>
@@ -283,7 +309,7 @@ function Portfolio() {
                 </div>
 
             </div>
-            <div className="portfolio-body">
+            <div className={`portfolio-body ${animationState}`}>
                 <div className="portfolio-img">
                     <img alt="" src={currentWork.image} />
                 </div>
@@ -300,11 +326,15 @@ function Portfolio() {
                 </div>
                 <div className="portfolio-title">{currentWork.title}</div>
                 <div className="portfolio-nav">
-                    <span onClick={prevWork} className="prev-item"><img alt="back" src={arrow} /> </span> 
-                    <span onClick={nextWork} className="next-item"><img alt="next" src={arrow} /> </span> 
+                    <span onClick={prevWork} className="prev-item"><img alt="back" src={arrow}/></span> 
+                    <span onClick={nextWork} className="next-item"><img alt="next" src={arrow}/></span> 
+                </div>
+            </div>
+            <div className="portfolio-nav-mobile">
+                    <span onClick={prevWork} className="prev-item"><img alt="back" src={arrow}/><span>Previous</span></span> 
+                    <span onClick={nextWork} className="next-item"><img alt="next" src={arrow}/><span>Next</span></span> 
                 </div>
 
-            </div>
         </main>
     )
 }

@@ -3,6 +3,7 @@ import Form from "./Form";
 import './css/Contact.css'
 import { MainRefContext } from "../App";
 import HomeNavButton from "./HomeNavButton";
+import HackerEffect from "./HackerEffect";
 
 function Contact() {
 
@@ -14,7 +15,7 @@ function Contact() {
       
             <div className="box">
                 <div className="text-box">
-                    <h1>Get in touch!</h1>
+                    <h1><HackerEffect text="Get in touch!" /></h1>
                     <p>If you would like to dicuss working together or you
                         have any questions don't hesitate to send me a message.
                     </p>
