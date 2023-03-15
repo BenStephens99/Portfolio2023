@@ -6,7 +6,6 @@ function HackerEffect(props) {
   const [intervalId, setIntervalId] = useState(null);
 
   function handleMouseOver(event) {
-    console.log("mouse over")
     let iteration = 0;
 
     clearInterval(intervalId);

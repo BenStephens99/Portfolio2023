@@ -257,7 +257,7 @@ function Portfolio() {
     const [currentWork, setCurrentWork] = useState(works[workIndex])
     const [animationState, setAnimationState] = useState(null)
 
-    let animationDuration = 380;
+    let animationDuration = 250;
 
     async function nextWork() {
         setAnimationState("leave-screen-left")
@@ -284,7 +284,7 @@ function Portfolio() {
         setCurrentWork(works[workIndex])
         async function startAnimation() {
             if(animationState != null) {
-                await wait(50)
+                await wait(100)
                 setAnimationState( animationState === "leave-screen-left" ? "enter-screen-right" : "enter-screen-left")
             }
         }

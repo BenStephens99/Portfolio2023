@@ -1,5 +1,5 @@
 :root {
-    --portAniDur: 400ms;
+    --portAniDur: 250ms;
 }
 
 @media screen and (max-width: 800px) {
@@ -140,7 +140,8 @@
     }
 
     .portfolio-nav-mobile .prev-item {
-        background-color: var(--backgroundColor3);
+        background-color: var(--backgroundColor2);
+        color: white;
     }
 
     .portfolio-nav .prev-item img {
@@ -193,7 +194,7 @@
 
     @keyframes leave-screen-left {
         to {
-            transform: translate(-160vw, 20vh) rotate(-45deg);
+            transform: translate(-100vw);
         }
     }
 
@@ -205,14 +206,14 @@
 
     @keyframes leave-screen-right {
         to {
-            transform: translate(160vw, 20vh) rotate(45deg);
+            transform: translate(100vw);
         }
     }
 
     .portfolio-body.enter-screen-left {
         animation-name: enter-screen-left;
         animation-duration: var(--portAniDur);
-        transform: translate(-160vw, 20vh) rotate(-45deg);
+        transform: translate(-100vw);
         animation-fill-mode: forwards;
     }
 
@@ -225,7 +226,7 @@
     .portfolio-body.enter-screen-right {
         animation-name: enter-screen-right;
         animation-duration: var(--portAniDur);
-        transform: translate(160vw, 20vh) rotate(45deg);
+        transform: translate(100vw);
         animation-fill-mode: forwards;
     }
 
