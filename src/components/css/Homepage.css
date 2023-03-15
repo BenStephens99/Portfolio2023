@@ -41,6 +41,10 @@
         font-size: 1em;
         width: 100%;
     }
+
+    .homepage .home-nav-button {
+        border: none;
+    }
 }
 
 

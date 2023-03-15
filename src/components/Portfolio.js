@@ -284,7 +284,6 @@ function Portfolio() {
         setCurrentWork(works[workIndex])
         async function startAnimation() {
             if(animationState != null) {
-                await wait(100)
                 setAnimationState( animationState === "leave-screen-left" ? "enter-screen-right" : "enter-screen-left")
             }
         }
