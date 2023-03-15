@@ -1,3 +1,30 @@
+/*** Week 3 ***/
+
+.moving-gradient-text {
+  animation: move-gradient 3s linear infinite;
+  background: linear-gradient(to right,
+      rgb(252, 0, 252),
+      rgb(251, 11, 11),
+      rgb(47, 179, 208),
+      rgb(252, 0, 252));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes move-gradient {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+
+
 /*** Week 2 ***/
 .animated-form-label {
   position: relative;

@@ -27,20 +27,16 @@
 
 .blog-post-body {
     background-color: var(--backgroundColor2);
-    transition: 200ms;
     z-index: 1;
     position: relative;
-    height: 0px;
-    padding: 0em 1em;
-    opacity: 0;
     max-height: 70vh;
     overflow-y: scroll;
+    display: none;
+    padding: 1vw;
 }
 
 .open .blog-post-body {
-    height: auto;
-    padding: 2em;
-    opacity: 1;
+    display: block;
 }
 
 .open .blog-post-header {

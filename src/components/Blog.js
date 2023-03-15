@@ -14,8 +14,24 @@ function Blog() {
     return (
         <main ref={mainRef} className="blog come-from-left">
             <HomeNavButton position="right" destination="/" text="Home" />
-            <h2><HackerEffect text="Weekly CSS Tricks"/> </h2>
+            <h2><HackerEffect text="Weekly CSS Tricks" /> </h2>
             <div className="blog-posts">
+
+                <BlogPost
+                    week="3"
+                    heading="Moving gradient text"
+                    date="15/03/23"
+                    demo={
+
+                        <h3>
+                            Check out this
+                            <span className="moving-gradient-text"> moving gradient text </span>
+                            effect.
+                        </h3>
+                    }
+                    css="BenStephens99/269f71e97679333921daed24d91a4221"
+                    html="BenStephens99/7160a4baf27b4a24eaf91a11ebbf716b"
+                />
 
                 <BlogPost
                     week="2"

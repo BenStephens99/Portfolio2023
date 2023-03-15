@@ -279,7 +279,6 @@ function Portfolio() {
         }
     }
 
-
     useEffect(() => {
         setCurrentWork(works[workIndex])
         async function startAnimation() {
