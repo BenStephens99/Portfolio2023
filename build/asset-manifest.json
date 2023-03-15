@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.575cc5b6.css",
-    "main.js": "/static/js/main.814a63fd.js",
+    "main.css": "/static/css/main.37960137.css",
+    "main.js": "/static/js/main.a3c1677d.js",
     "static/media/pong.webp": "/static/media/pong.2c62308da845a4453ad8.webp",
     "static/media/houseEscape.webp": "/static/media/houseEscape.82e5c41f74820740c51b.webp",
     "static/media/NPCSystem.webp": "/static/media/NPCSystem.7cd42e2a293b3aa80a46.webp",
@@ -13,12 +13,14 @@
     "static/media/jtreatThumb.webp": "/static/media/jtreatThumb.eeb7536266cb1e83bf97.webp",
     "static/media/piapp.webp": "/static/media/piapp.f470470540f9948e41a7.webp",
     "static/media/arrow.webp": "/static/media/arrow.fce4774505b1277d1c9e.webp",
+    "static/media/phone.svg": "/static/media/phone.a8a7fa76a1e41350c3e8196a4d36d1c3.svg",
     "index.html": "/index.html",
-    "main.575cc5b6.css.map": "/static/css/main.575cc5b6.css.map",
-    "main.814a63fd.js.map": "/static/js/main.814a63fd.js.map"
+    "static/media/home.svg": "/static/media/home.63f29d6c0afed5a561ee3b7e4265c1c0.svg",
+    "main.37960137.css.map": "/static/css/main.37960137.css.map",
+    "main.a3c1677d.js.map": "/static/js/main.a3c1677d.js.map"
   },
   "entrypoints": [
-    "static/css/main.575cc5b6.css",
-    "static/js/main.814a63fd.js"
+    "static/css/main.37960137.css",
+    "static/js/main.a3c1677d.js"
   ]
 }
