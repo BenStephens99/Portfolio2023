@@ -2,8 +2,8 @@
     --portAniDur: 250ms;
 }
 
-.portfolio-body.enter-screen-right .portfolio-img,
-.portfolio-body.enter-screen-left .portfolio-img {
+.portfolio-body.enter-screen-right .portfolio-img img,
+.portfolio-body.enter-screen-left .portfolio-img img{
     opacity: 0;
     animation-name: fade-in-image;
     animation-fill-mode: forwards;
@@ -436,7 +436,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
 
     .portfolio-nav>.prev-item {
@@ -456,7 +455,13 @@
         transition: 400ms;
     }
 
-    .portfolio-nav img:hover {
+    .portfolio-nav>.prev-item:hover,
+    .portfolio-nav>.next-item:hover {
+        cursor: pointer;
+    }
+
+    .portfolio-nav>.prev-item:hover img,
+    .portfolio-nav>.next-item:hover img {
         width: 25%;
         cursor: pointer;
     }
