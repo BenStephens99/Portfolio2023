@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a89580d.css",
-    "main.js": "/static/js/main.2ec92d69.js",
+    "main.css": "/static/css/main.042140af.css",
+    "main.js": "/static/js/main.6b9db61a.js",
     "static/media/pong.webp": "/static/media/pong.2c62308da845a4453ad8.webp",
     "static/media/houseEscape.webp": "/static/media/houseEscape.82e5c41f74820740c51b.webp",
     "static/media/NPCSystem.webp": "/static/media/NPCSystem.7cd42e2a293b3aa80a46.webp",
@@ -13,14 +13,16 @@
     "static/media/jtreatThumb.webp": "/static/media/jtreatThumb.eeb7536266cb1e83bf97.webp",
     "static/media/piapp.webp": "/static/media/piapp.f470470540f9948e41a7.webp",
     "static/media/arrow.webp": "/static/media/arrow.fce4774505b1277d1c9e.webp",
+    "static/media/github.svg": "/static/media/github.c1517443c07941c6854d9fb30fb75e39.svg",
+    "static/media/cv.svg": "/static/media/cv.a87fcef70b3fffb7ada1d1fc8d8df8da.svg",
     "static/media/phone.svg": "/static/media/phone.a8a7fa76a1e41350c3e8196a4d36d1c3.svg",
     "index.html": "/index.html",
     "static/media/home.svg": "/static/media/home.63f29d6c0afed5a561ee3b7e4265c1c0.svg",
-    "main.0a89580d.css.map": "/static/css/main.0a89580d.css.map",
-    "main.2ec92d69.js.map": "/static/js/main.2ec92d69.js.map"
+    "main.042140af.css.map": "/static/css/main.042140af.css.map",
+    "main.6b9db61a.js.map": "/static/js/main.6b9db61a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a89580d.css",
-    "static/js/main.2ec92d69.js"
+    "static/css/main.042140af.css",
+    "static/js/main.6b9db61a.js"
   ]
 }

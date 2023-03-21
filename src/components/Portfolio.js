@@ -19,6 +19,9 @@ import HackerEffect from "./HackerEffect";
 import NavIcon from "./NavIcon";
 import homeSvg from './images/home.svg'
 import phoneSVG from './images/phone.svg'
+import NavIconExternal from "./NavIconExternal";
+import gitSVG from './images/github.svg'
+import cvSVG from './images/cv.svg'
 
 const energyApp = {
     title:
@@ -294,13 +297,15 @@ function Portfolio() {
         <main ref={mainRef} className="portfolio come-from-bottom">
             <div className="portfolio-header">
                 <NavIcon text="HOME" icon={homeSvg} position="top" destination="/"/>
+                <NavIconExternal text="GITHUB" icon={gitSVG} url={"https://www.linkedin.com/in/stephens-ben/"}/>
+                <NavIconExternal text="CV" icon={cvSVG} url={"/BenStephensCV.pdf"}/>
                 <NavIcon text="CONTACT" icon={phoneSVG} position="top" destination="/contact" pad="pad"/>
 
                 <HomeNavButton text="Home" position="top" destination="/" />
                 <ul className="socials">
                     <li><a href="https://github.com/BenStephens99" target="_blank" rel="noreferrer">Github</a></li>
                     <li><a href="https://www.linkedin.com/in/stephens-ben/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-                    <li><a href="./Ben Stephens CV.pdf" target="_blank" rel="noreferrer">CV</a></li>
+                    <li><a href="/BenStephensCV.pdf" target="_blank" rel="noreferrer">CV</a></li>
                 </ul>
                 <div className="get-in-touch">
                     <HomeNavButton text="Get In Touch" position="top" destination="/contact" />
