@@ -19,7 +19,7 @@ function App() {
   return (
     <DirectionContext.Provider value={{ direction, setDirection }}>
       <MainRefContext.Provider value={mainRef}>
-        <div className='app'>
+        <>
           
           <Routes>
             <Route path='/' element={<Homepage />} />
@@ -28,7 +28,7 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/portfolio' element={<Portfolio />} />
           </Routes>
-        </div>
+        </>
       </MainRefContext.Provider>
     </DirectionContext.Provider>
   );

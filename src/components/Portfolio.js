@@ -329,8 +329,8 @@ function Portfolio() {
                 </div>
                 <div className="portfolio-title">{currentWork.title}</div>
                 <div className="portfolio-nav">
-                    <span onClick={prevWork} className="prev-item"><img alt="back" src={arrow}/></span> 
-                    <span onClick={nextWork} className="next-item"><img alt="next" src={arrow}/></span> 
+                    <span onClick={prevWork} className="prev-item"><img draggable="false" alt="back" src={arrow}/></span> 
+                    <span onClick={nextWork} className="next-item"><img draggable="false" alt="next" src={arrow}/></span> 
                 </div>
             </div>
             <div className="portfolio-nav-mobile">

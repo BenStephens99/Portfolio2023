@@ -4,7 +4,7 @@ import arrow from './images/arrow.webp';
 import { useNavigate, useLocation } from "react-router-dom";
 import { MainRefContext } from "../App";
 import { DirectionContext } from "../App";
-import HackerEffect from "./HackerEffect";
+import HoverLetters from "./HoverLetters";
 
 function wait(time) {
     return new Promise(resolve => {
@@ -53,8 +53,8 @@ function HomeNavButton(props) {
 
     return (
         <div onClick={goToPage} className={`home-nav-button ${props.position}`}>
-            <h3><HackerEffect text={props.text} /></h3>
-            <img  src={arrow} alt="" />
+            <h3><HoverLetters text={props.text} /></h3>
+            <img draggable="false" src={arrow} alt="" />
         </div>
     )
 }

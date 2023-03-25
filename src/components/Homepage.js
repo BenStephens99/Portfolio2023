@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import { DirectionContext } from "../App";
 import HackerEffect from "./HackerEffect";
 
-
 function Homepage() {
 
     const [divClass, setDivClass] = useState("invisible")
@@ -25,8 +24,8 @@ function Homepage() {
 
         <main ref={mainRef} className={`homepage ${divClass}`}>
 
-            <ScrollingBackground />
 
+            <ScrollingBackground />
             <div className="homepage-text">
                 <h1><HackerEffect text="Ben Stephens"/></h1>
                 <h2><HackerEffect text="Developer"/></h2>
