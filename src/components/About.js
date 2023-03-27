@@ -4,6 +4,8 @@ import HomeNavButton from "./HomeNavButton";
 import { MainRefContext } from "../App";
 import me from './images/me.webp'
 import HackerEffect from "./HackerEffect";
+import HoverLetters from "./HoverLetters";
+
 function About() {
 
     const mainRef = React.useContext(MainRefContext);
@@ -13,7 +15,7 @@ function About() {
             <HomeNavButton text="Home" position="bottom" destination="/" />
             <div className="boxes">
                 <div className="picture box">
-                    <h2><HackerEffect text="Ben Stephens" /></h2>
+                    <h2><HoverLetters text="Ben Stephens" /></h2>
                     <img src={me} alt="Ben Stephens" />
                 </div>
 
@@ -38,7 +40,7 @@ function About() {
                 </div>
 
                 <div className="qualifications box">
-                    <h3><HackerEffect text="Qualifications" /></h3>
+                    <h3><HoverLetters text="Qualifications" /></h3>
                     <div className="qual">
                         <p className="accent"> Computer Science for Games BSc Hons</p>
                         <p >First Class Honours</p>
