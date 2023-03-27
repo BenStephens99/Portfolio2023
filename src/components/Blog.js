@@ -47,7 +47,7 @@ function Blog() {
                     date="22/03/23"
                     demo={
 
-                        <h2 className="scattered-letters">
+                        <h2 className="week-4-scattered-letters">
                             <span>H</span>
                             <span>o</span>
                             <span>v</span>
@@ -70,7 +70,7 @@ function Blog() {
 
                         <h3>
                             Check out this
-                            <span className="moving-gradient-text"> moving gradient text </span>
+                            <span className="week-3-moving-gradient-text"> moving gradient text </span>
                             effect.
                         </h3>
                     }
@@ -85,7 +85,7 @@ function Blog() {
                     date="08/03/23"
                     demo={
 
-                        <div className="animated-form-label">
+                        <div className="week-2-animated-form-label">
                             <input type="text" name="name" id="name" required />
                             <label>Name</label>
                         </div>
@@ -99,7 +99,7 @@ function Blog() {
                     heading="Gradual Underline on Hover"
                     text="Hover over the text below to see the effect."
                     date="01/03/23"
-                    demo={<h2 className="underline-on-hover">Hover over Me</h2>}
+                    demo={<h2 className="week-1-underline-on-hover">Hover over Me</h2>}
                     css="BenStephens99/7aad512b1c7c328aa5b6cbbdf7f946a2"
                     html="BenStephens99/be0cfabfef46fd50bdaf6239fa622d98"
                 />

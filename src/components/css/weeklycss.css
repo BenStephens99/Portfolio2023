@@ -51,40 +51,40 @@
 
 /*** Week 4 ***/
 
-.scattered-letters {
+.week-4-scattered-letters {
   transition: 400ms;
   display: inline-flex;
 }
 
-.scattered-letters span {
+.week-4-scattered-letters span {
   display: block;
   transition: 600ms;
   min-width: 0.5em;
 }
 
-.scattered-letters:hover span {
+.week-4-scattered-letters:hover span {
   color: var(--accentColor);
 }
 
-.scattered-letters:hover span:nth-child(5n-4) {
+.week-4-scattered-letters:hover span:nth-child(5n-4) {
   transform: translate(-20%, 20%) rotate(30deg);
 }
-.scattered-letters:hover span:nth-child(5n-3) {
+.week-4-scattered-letters:hover span:nth-child(5n-3) {
   transform: translate(20%, -30%) rotate(-40deg);
 }
-.scattered-letters:hover span:nth-child(5n-2) {
+.week-4-scattered-letters:hover span:nth-child(5n-2) {
   transform: translate(20%, 10%) rotate(-20deg);
 }
-.scattered-letters:hover span:nth-child(5n-1) {
+.week-4-scattered-letters:hover span:nth-child(5n-1) {
   transform: translate(20%, 30%) rotate(45deg);
 }
-.scattered-letters:hover span:nth-child(5n) {
+.week-4-scattered-letters:hover span:nth-child(5n) {
   transform: translate(20%, -5%) rotate(10deg);
 }
 
 /*** Week 3 ***/
 
-.moving-gradient-text {
+.week-3-moving-gradient-text {
   animation: move-gradient 3s linear infinite;
   background: linear-gradient(to right,
       rgb(252, 0, 252),
@@ -111,13 +111,13 @@
 
 
 /*** Week 2 ***/
-.animated-form-label {
+.week-2-animated-form-label {
   position: relative;
   margin: 1em;
 }
 
-.animated-form-label input,
-.animated-form-label textarea {
+.week-2-animated-form-label input,
+.week-2-animated-form-label textarea {
   font-family: inherit;
   font-size: 1.5em;
   padding: 10px 0;
@@ -127,7 +127,7 @@
   border-bottom: 1px solid grey;
 }
 
-.animated-form-label label {
+.week-2-animated-form-label label {
   position: absolute;
   top: 1.5em;
   left: 0;
@@ -136,10 +136,10 @@
   font-size: 1.4em;
 }
 
-.animated-form-label input:valid ~ label,
-.animated-form-label input:focus ~ label,
-.animated-form-label textarea:valid ~ label,
-.animated-form-label textarea:focus ~ label
+.week-2-animated-form-label input:valid ~ label,
+.week-2-animated-form-label input:focus ~ label,
+.week-2-animated-form-label textarea:valid ~ label,
+.week-2-animated-form-label textarea:focus ~ label
 {
   color: var(--accentColor);
   transform: translateY(-1.6em);
@@ -148,13 +148,13 @@
 
 
 /**** Week 1 ****/
-.underline-on-hover {
+.week-1-underline-on-hover {
     display: inline-flex;
     padding-bottom: 0.5em;
     position: relative;
   }
   
-  .underline-on-hover:after {
+  .week-1-underline-on-hover:after {
     content: "";
     position: absolute;
     height: 3px;
@@ -165,10 +165,10 @@
     background-color: var(--accentColor);
   }
   
-  .underline-on-hover:hover:after {
+  .week-1-underline-on-hover:hover:after {
     width: 100%
   }
   
-  .underline-on-hover:hover {
+  .week-1-underline-on-hover:hover {
     cursor: pointer;
   }
