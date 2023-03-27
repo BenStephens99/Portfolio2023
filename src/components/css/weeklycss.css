@@ -1,3 +1,36 @@
+/*** Week 4 ***/
+
+.scattered-letters {
+  transition: 400ms;
+  display: inline-flex;
+}
+
+.scattered-letters span {
+  display: block;
+  transition: 600ms;
+  min-width: 0.5em;
+}
+
+.scattered-letters:hover span {
+  color: var(--accentColor);
+}
+
+.scattered-letters:hover span:nth-child(5n-4) {
+  transform: translate(-20%, 20%) rotate(30deg);
+}
+.scattered-letters:hover span:nth-child(5n-3) {
+  transform: translate(20%, -30%) rotate(-40deg);
+}
+.scattered-letters:hover span:nth-child(5n-2) {
+  transform: translate(20%, 10%) rotate(-20deg);
+}
+.scattered-letters:hover span:nth-child(5n-1) {
+  transform: translate(20%, 30%) rotate(45deg);
+}
+.scattered-letters:hover span:nth-child(5n) {
+  transform: translate(20%, -5%) rotate(10deg);
+}
+
 /*** Week 3 ***/
 
 .moving-gradient-text {
@@ -9,6 +42,7 @@
       rgb(252, 0, 252));
   background-size: 200%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }

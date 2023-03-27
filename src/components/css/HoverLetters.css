@@ -10,17 +10,17 @@
 }
 
 .hover-letters:hover span:nth-child(5n-4) {
-    transform: translate(10%, 30%) rotate(30deg);
+    transform: translate(-10%, 20%) rotate(30deg);
 }
 .hover-letters:hover span:nth-child(5n-3) {
     transform: translate(20%, -30%) rotate(-40deg);
 }
 .hover-letters:hover span:nth-child(5n-2) {
-    transform: translate(30%, 30%) rotate(-20deg);
+    transform: translate(30%, 10%) rotate(-20deg);
 }
 .hover-letters:hover span:nth-child(5n-1) {
     transform: translate(20%, 30%) rotate(45deg);
 }
 .hover-letters:hover span:nth-child(5n) {
-    transform: translate(10%, -30%) rotate(10deg);
+    transform: translate(10%, -5%) rotate(10deg);
 }

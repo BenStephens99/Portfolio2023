@@ -17,6 +17,29 @@ function Blog() {
             <h2><HackerEffect text="Weekly CSS Tricks" /> </h2>
             <div className="blog-posts">
 
+
+            <BlogPost
+                    week="4"
+                    heading="Scattered letters"
+                    text="Hover over the text below to see the effect."
+                    date="22/03/23"
+                    demo={
+
+                        <h2 className="scattered-letters">
+                           <span>H</span>
+                           <span>o</span>
+                           <span>v</span>
+                           <span>e</span>
+                           <span>r</span>
+                           <span> </span>
+                           <span>M</span>
+                           <span>e</span>
+                        </h2>
+                    }
+                    css="BenStephens99/cd3ef80df161a869fb7221a5932a7b21"
+                    html="BenStephens99/4751648bc59e6f0caa0c04c75911beae"
+                />
+
                 <BlogPost
                     week="3"
                     heading="Moving gradient text"
