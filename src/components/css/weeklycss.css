@@ -1,3 +1,54 @@
+/*** Week 5 ***/
+
+.week-5-nav-icon {
+  width: 40px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  height: 40px;
+}
+
+.week-5-nav-icon span  {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.week-5-nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.week-5-nav-icon span:nth-child(2) {
+  top: 14px;
+}
+
+.week-5-nav-icon span:nth-child(3) {
+  top: 28px;
+}
+
+.week-5-nav-icon.open span:nth-child(1) {
+  top: 14px;
+  transform: rotate(135deg);
+}
+
+.week-5-nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.week-5-nav-icon.open span:nth-child(3) {
+  top: 14px;
+  transform: rotate(-135deg);
+}
+
+
 /*** Week 4 ***/
 
 .scattered-letters {

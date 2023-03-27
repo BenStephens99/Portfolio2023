@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MainRefContext } from "../App";
 import HomeNavButton from "./HomeNavButton";
 import './css/Blog.css'
@@ -9,7 +9,11 @@ import HackerEffect from "./HackerEffect";
 function Blog() {
     const mainRef = React.useContext(MainRefContext);
 
-    //<BlogPost heading="Reactive Form Propmt Text" text="More Text" date="14/03/23" />
+    const [menuState, setMenuState] = useState("closed");
+
+    function toggleMenu() {
+        setMenuState(menuState === "open" ? "closed" : "open")
+    }
 
     return (
         <main ref={mainRef} className="blog come-from-left">
@@ -18,7 +22,25 @@ function Blog() {
             <div className="blog-posts">
 
 
-            <BlogPost
+
+                <BlogPost
+                    week="5"
+                    heading="Animated hamburger menu"
+                    text="Click on the icon below to see the effect."
+                    date="29/03/23"
+                    demo={
+
+                        <div className={`week-5-nav-icon ${menuState}`} onClick={toggleMenu}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    }
+                    css="BenStephens99/1cbbea2443dff0b7327418abf57205f5"
+                    html="BenStephens99/f87db7f03aaa650543e2deb52d3cf176"
+                />
+
+                <BlogPost
                     week="4"
                     heading="Scattered letters"
                     text="Hover over the text below to see the effect."
@@ -26,14 +48,14 @@ function Blog() {
                     demo={
 
                         <h2 className="scattered-letters">
-                           <span>H</span>
-                           <span>o</span>
-                           <span>v</span>
-                           <span>e</span>
-                           <span>r</span>
-                           <span> </span>
-                           <span>M</span>
-                           <span>e</span>
+                            <span>H</span>
+                            <span>o</span>
+                            <span>v</span>
+                            <span>e</span>
+                            <span>r</span>
+                            <span> </span>
+                            <span>M</span>
+                            <span>e</span>
                         </h2>
                     }
                     css="BenStephens99/cd3ef80df161a869fb7221a5932a7b21"
@@ -88,3 +110,4 @@ function Blog() {
 }
 
 export default Blog;
+
